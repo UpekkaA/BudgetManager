@@ -1,0 +1,62 @@
+
+    <resources>
+        <string-array name="spinnerItems">
+            <item>Income</item>
+            <item>Expense</item>
+
+        </string-array>
+
+        <string-array name="IncomeCategoryspinnerItems">
+            <item>Salary</item>
+            <item>Bonus</item>
+            <item>Allowance</item>
+            <item>Other</item>
+
+        </string-array>
+
+        <string-array name="ExpenseCategoryspinnerItems">
+            <item>Food</item>
+            <item>Transportation</item>
+            <item>Health</item>
+            <item>Education</item>
+            <item>Apparel</item>
+            <item>Other</item>
+
+        </string-array>
+
+        <string-array name="Currency">
+            <item>USD</item>
+            <item>GBP</item>
+            <item>LKR</item>
+            <item>EUR</item>
+            <item>INR</item>
+            <item>AUD</item>
+        </string-array>
+
+        <string-array name="Years">
+            <item>2015</item>
+            <item>2016</item>
+            <item>2017</item>
+            <item>2018</item>
+            <item>2019</item>
+            <item>2020</item>
+            <item>2021</item>
+        </string-array>
+
+        <string-array name="Months">
+            <item>January</item>
+            <item>February</item>
+            <item>March</item>
+            <item>April</item>
+            <item>May</item>
+            <item>June</item>
+            <item>July</item>
+            <item>August</item>
+            <item>September</item>
+            <item>October</item>
+            <item>November</item>
+            <item>December</item>
+
+        </string-array>
+    </resources>
+

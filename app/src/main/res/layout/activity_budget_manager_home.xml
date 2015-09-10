@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".BudgetManagerHome"
+    android:id="@+id/layout1"
+    android:nestedScrollingEnabled="false"
+    android:background="#ffffffff">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/tablayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logoImage"
+            android:src="@drawable/logonew"
+            android:layout_above="@+id/inbutton"
+            android:layout_alignRight="@+id/outbutton"
+            android:layout_alignEnd="@+id/outbutton" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="5dp"></TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INCOME"
+            android:id="@+id/inbutton"
+            android:textSize="@dimen/abc_action_button_min_width_overflow_material"
+            android:background="#ff00a100"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="cashinput"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="25dp"></TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXPENSE"
+            android:id="@+id/outbutton"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:textSize="@dimen/abc_action_button_min_width_overflow_material"
+            android:background="#ffff1919"
+            android:layout_below="@+id/inbutton"
+            android:layout_centerHorizontal="true"
+            android:onClick="cashout"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="30dp"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/settingsButton"
+                android:layout_column="3"
+                android:src="@drawable/settingssquare"
+                android:onClick="settingsOn"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chartsButton"
+                android:layout_column="11"
+                android:src="@drawable/barchart"
+                android:onClick="viewStat" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/overviewButton"
+                android:layout_column="15"
+                android:src="@drawable/overview"
+                android:onClick="viewOverview" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/budgetButton"
+                android:layout_column="17"
+                android:src="@drawable/budget"
+                android:onClick="setBudget" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minHeight="20dp"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Current Balance"
+                android:id="@+id/textView16"
+                android:layout_column="2"
+                android:layout_span="16"
+                android:textSize="25dp"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="20dp"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tr6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/balance"
+                android:layout_column="2"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_span="16" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>
